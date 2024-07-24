@@ -1,0 +1,15 @@
+import numpy as np
+
+stock_data= np.array([
+    [120,121,123,121,119,120,125],
+    [130,123,131,142,132,143,135],
+    [141,144,124,142,154,131,145],
+    [151,165,156,154,154,165,195],
+    [161,164,167,164,146,162,163],
+])
+average_stock = np.mean(stock_data, axis=1)
+print("Average price for each stock:", average_stock)
+max_stock = np.max(stock_data, axis=1)
+print("Maximum price for each stock:", max_stock)
+min_stock = np.min(stock_data, axis=1)
+print("Minimum price for each stock:", min_stock)
